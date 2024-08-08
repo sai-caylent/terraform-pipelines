@@ -21,3 +21,8 @@ variable "managed_policy_arns_list" {
   type        = string
   default     = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
+
+variable "account_id" {
+  type        = string
+  description = "The AWS account ID where this resources will be deployed."
+}
