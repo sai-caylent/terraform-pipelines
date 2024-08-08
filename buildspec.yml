@@ -13,6 +13,7 @@ phases:
     commands:
       - echo "Deploying to ${WORKSPACE}"
       - cd "$CODEBUILD_SRC_DIR"
+      - ls -R
       - chmod -R +x ./scripts
       - ./scripts/terraform.sh
 
