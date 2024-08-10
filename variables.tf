@@ -26,3 +26,9 @@ variable "account_id" {
   type        = string
   description = "The AWS account ID where this resources will be deployed."
 }
+
+variable "test" {
+  type    = string
+  default = "test"
+
+}
